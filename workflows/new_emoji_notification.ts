@@ -2,7 +2,7 @@ import { DefineWorkflow, Schema } from "deno-slack-sdk/mod.ts";
 
 const workflow = DefineWorkflow({
   callback_id: "new-emoji-notification-workflow",
-  title: "Notify new public emoji creation",
+  title: "Notify new emoji creation",
   input_parameters: {
     properties: {
       name: { type: Schema.types.string },
