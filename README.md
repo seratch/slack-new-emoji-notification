@@ -32,17 +32,15 @@ $ slack create -t https://github.com/seratch/slack-new-emoji-notification
 $ cd jolly-turtle-321/
 ```
 
-### Set a valid channel ID to notify new channels
+### Set a valid channel ID to notify new emojis
 
 Create a new channel to post notifications and copy its channel ID:
 
-TODO:
-<img src="https://github.com/seratch/slack-new-channel-notification/assets/19658/3d0572a6-7f53-4b33-ba72-929de66115ca" width=600 />
+<img src="https://github.com/seratch/slack-new-emoji-notification/assets/19658/c803cb04-870d-44b3-993f-3bbc08609a49" width=600 />
 
 Replace the channel ID in `workflows/new_emoji_notification.ts` as below:
 
-TODO:
-<img src="https://github.com/seratch/slack-new-channel-notification/assets/19658/bd4ad6d2-9b5f-4ca3-8c40-6b49f72ed231" width=600 />
+<img src="https://github.com/seratch/slack-new-emoji-notification/assets/19658/3be6d4ba-86cc-47d6-828c-5c55677d674f" width=600 />
 
 If you want to customize the notification message, you can edit the "message" parameter as well.
 
@@ -110,13 +108,9 @@ $
 
 Whenever someone creates a new custom emoji, the channel receives a notification like this!
 
-TODO:
-<img src="https://github.com/seratch/slack-new-channel-notification/assets/19658/fa52cb95-603f-453a-b1f6-fa60c24509fb" width=600 />
+<img src="https://github.com/seratch/slack-new-emoji-notification/assets/19658/072b0da6-1a32-40d4-88be-821b68e2a3dd" width=600 />
 
 To customize the app name and icon, you can modify `manifest.ts` and add your own icon image file within the `assets/` directory.
-
-TODO:
-<img src="https://github.com/seratch/slack-new-channel-notification/assets/19658/3eff56b4-28fe-4da3-b88e-bb3c6581e9df" width=600 />
 
 That's it :tada: As long as you refrain from adding custom steps to this workflow, Slack's automation platform won't charge addition cost for it. For more information, kindly refer to [the help page](https://slack.com/help/articles/15363357403411).
 
