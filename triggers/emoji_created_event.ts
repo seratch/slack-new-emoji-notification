@@ -19,7 +19,7 @@ const trigger: Trigger<typeof workflow.definition> = {
         operator: "AND",
         inputs: [
           { statement: `${D.Event.EmojiChanged.subtype} == 'add'` },
-          { statement: `${D.Event.EmojiChanged.value} CONTAINS 'https://'` },
+          { statement: `${D.Event.EmojiChanged.value} CONTAINS 'https://'` }, // to skip alias creation events
         ],
       },
     },
