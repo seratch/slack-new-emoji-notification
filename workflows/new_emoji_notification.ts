@@ -16,7 +16,7 @@ const workflow = DefineWorkflow({
 workflow.addStep(Schema.slack.functions.SendMessage, {
   channel_id: "C06D6AL8JJV", // TODO: edit this parameter
   message:
-    `New emoji created: \`:${workflow.inputs.name}:\` ${workflow.inputs.value}`,
+    `New emoji created: \`:${workflow.inputs.name}:\` <${workflow.inputs.value}>`,
 });
 
 export default workflow;
